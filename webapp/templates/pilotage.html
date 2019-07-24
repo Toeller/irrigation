@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" href='/static/style.css'/>
+</head>
+<body>
+<h1>Pilotage</h1>
+<form action="pilotage.html" method="get">
+  <p>Pompe</p>
+  <fieldset>
+    <input type="radio" id="p_on" name="state_p" value="1"{{p_on}} disabled>
+    <label for="p_on">active</label> 
+    <input type="radio" id="p_off" name="state_p" value="0"{{p_off} disabled>
+    <label for="p_off">inactive</label>
+	<input type="submit" name="p_on" value="activer">
+	<input type="submit" name="p_off" value="inactiver">
+   </fieldset>
+</form>
+<form action="pilotage.html" method="post">
+  <p>Valve 1</p>
+  <fieldset>
+    <input type="radio" id="v1_on" name="state" value="1"{{v1_on}} disabled>
+    <label for="v1_on">active</label> 
+    <input type="radio" id="v1_off" name="state" value="0"{{v1_off} disabled>
+    <label for="v1_off">inactive</label>
+	<input type="submit" name="v1_on" value="activer">
+	<input type="submit" name="v1_off" value="inactiver">
+   </fieldset>
+</form >
+<form action="pilotage.html" method="post">
+  <p>Valve 2</p>
+  <fieldset>
+    <input type="radio" id="v2_on" name="state" value="1"{{v2_on}}>
+    <label for="v2_on">activer</label> 
+    <input type="radio" id="v2_off" name="state" value="0"{{v2_off}>
+    <label for="v2_off">inactiver</label>
+   </fieldset>
+</form>
+<form action="pilotage.html" method="post">
+  <p>Valve 3</p>
+  <fieldset>
+    <input type="radio" id="v3_on" name="state" value="1"{{v3_on}}>
+    <label for="v3_on">activer</label> 
+    <input type="radio" id="v3_off" name="state" value="0"{{v3_off}>
+    <label for="v3_off">inactiver</label>
+   </fieldset>
+</form>
+<form action="pilotage.html" method="post">
+  <p>Valve 4</p>
+  <fieldset>
+    <input type="radio" id="v4_on" name="state" value="1"{{v4_on}}>
+    <label for="v4_on">activer</label> 
+    <input type="radio" id="v4_off" name="state" value="0"{{v4_off}>
+    <label for="v4_off">inactiver</label>
+   </fieldset>
+</form>
+</body>
+</html>
