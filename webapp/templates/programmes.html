@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href='/static/style.css'/>
+</head>
+<body>
+<h1>Programmes</h1>
+
+<form action="programmes.html" method="post">
+  <p>Programme valve 1</p>
+  <fieldset>
+    <input type="date" id="v1_start" {{v1_start}}>
+    <label for="v1_start">Date de démarrage</label><br>
+    <input type="number" id="v1_freqency" min="1" max="30" {{v1_freqency}}>
+	<label for="v1_freqency">tous les ... jours</label><br>
+	<input type="time" id="v1_time" {{v1_time}}>
+	<label for="v1_time">heure de start</label><br>
+	<input type="number" id="v1_duration" min="1" max="1440" {{v1_duration}}>
+	<label for="v1_duration">durée (minutes)</label><br>
+	<input type="submit" name="v1_mod_prog" value="enregistrer la modification">
+	<input type="submit" name="v1_del_prog" value="effacer le programme">
+   </fieldset>
+</form>
+
+<form action="programmes.html" method="post">
+  <p>Programme valve 2</p>
+  <fieldset>
+    <input type="date" id="v2_start" {{v2_start}}>
+    <label for="v2_start">Date de démarrage</label><br>
+    <input type="number" id="v2_freqency" min="1" max="30" {{v2_freqency}}>
+	<label for="v2_freqency">tous les ... jours</label><br>
+	<input type="time" id="v2_time" {{v2_time}}>
+	<label for="v2_time">heure de start</label><br>
+	<input type="number" id="v2_duration" min="1" max="1440" {{v2_duration}}>
+	<label for="v2_duration">durée (minutes)</label><br>
+	<input type="submit" name="v2_mod_prog" value="enregistrer la modification">
+	<input type="submit" name="v2_del_prog" value="effacer le programme">
+   </fieldset>
+</form>
+<form action="programmes.html" method="post">
+  <p>Programme valve 3</p>
+  <fieldset>
+    <input type="date" id="v3_start" {{v1_start}}>
+    <label for="v3_start">Date de démarrage</label><br>
+    <input type="number" id="v3_freqency" min="1" max="30" {{v3_freqency}}>
+	<label for="v3_freqency">tous les ... jours</label><br>
+	<input type="time" id="v3_time" {{v1_time}}>
+	<label for="v3_time">heure de start</label><br>
+	<input type="number" id="v3_duration" min="1" max="1440" {{v3_duration}}>
+	<label for="v3_duration">durée (minutes)</label><br>
+	<input type="submit" name="v3_mod_prog" value="enregistrer la modification">
+	<input type="submit" name="v3_del_prog" value="effacer le programme">
+   </fieldset>
+</form>
+<form action="programmes.html" method="post">
+  <p>Programme valve 4</p>
+  <fieldset>
+    <input type="date" id="v4_start" {{v4_start}}>
+    <label for="v4_start">Date de démarrage</label><br>
+    <input type="number" id="v4_freqency" min="1" max="30" {{v4_freqency}}>
+	<label for="v4_freqency">tous les ... jours</label><br>
+	<input type="time" id="v4_time" {{v4_time}}>
+	<label for="v4_time">heure de start</label><br>
+	<input type="number" id="v4_duration" min="1" max="1440" {{v4_duration}}>
+	<label for="v4_duration">durée (minutes)</label><br>
+	<input type="submit" name="v4_mod_prog" value="enregistrer la modification">
+	<input type="submit" name="v4_del_prog" value="effacer le programme">
+   </fieldset>
+</form>
+
+</body>
+</html>

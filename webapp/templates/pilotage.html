@@ -4,7 +4,7 @@
 </head>
 <body>
 <h1>Pilotage</h1>
-<form action="pilotage.html" method="get">
+<form action="pilotage.html" method="post">
   <p>Pompe</p>
   <fieldset>
     <input type="radio" id="p_on" name="state_p" value="1"{{p_on}} disabled>
@@ -29,28 +29,34 @@
 <form action="pilotage.html" method="post">
   <p>Valve 2</p>
   <fieldset>
-    <input type="radio" id="v2_on" name="state" value="1"{{v2_on}}>
+    <input type="radio" id="v2_on" name="state" value="1"{{v2_on}} disabled>
     <label for="v2_on">activer</label> 
-    <input type="radio" id="v2_off" name="state" value="0"{{v2_off}>
+    <input type="radio" id="v2_off" name="state" value="0"{{v2_off} disabled>
     <label for="v2_off">inactiver</label>
+	<input type="submit" name="v2_on" value="activer">
+	<input type="submit" name="v2_off" value="inactiver">
    </fieldset>
 </form>
 <form action="pilotage.html" method="post">
   <p>Valve 3</p>
   <fieldset>
-    <input type="radio" id="v3_on" name="state" value="1"{{v3_on}}>
+    <input type="radio" id="v3_on" name="state" value="1"{{v3_on}} disabled>
     <label for="v3_on">activer</label> 
-    <input type="radio" id="v3_off" name="state" value="0"{{v3_off}>
+    <input type="radio" id="v3_off" name="state" value="0"{{v3_off} disabled>
     <label for="v3_off">inactiver</label>
+	<input type="submit" name="v3_on" value="activer">
+	<input type="submit" name="v3_off" value="inactiver">
    </fieldset>
 </form>
 <form action="pilotage.html" method="post">
   <p>Valve 4</p>
   <fieldset>
-    <input type="radio" id="v4_on" name="state" value="1"{{v4_on}}>
+    <input type="radio" id="v4_on" name="state" value="1"{{v4_on}} disabled>
     <label for="v4_on">activer</label> 
-    <input type="radio" id="v4_off" name="state" value="0"{{v4_off}>
+    <input type="radio" id="v4_off" name="state" value="0"{{v4_off} disabled>
     <label for="v4_off">inactiver</label>
+	<input type="submit" name="v4_on" value="activer">
+	<input type="submit" name="v4_off" value="inactiver">
    </fieldset>
 </form>
 </body>
