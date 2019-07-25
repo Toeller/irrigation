@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from flask import Flask
+from flask import Flask,request,render_template
 import Adafruit_DHT
 import MySQLdb
 
@@ -24,6 +24,16 @@ def pilotage():
 		result+="nom:{0}<br> demarage:{1}<br> l tous les {2} jours<br> duree: {3}".format(entry[1], entry[2], entry[3],entry[4])
 		result+="<br>"
 	return result
+
+@app.route('/programmes')
+def programmes():
+	templateData={
+		'v1_start':'2019-07-25',
+		'v1_frequency':'2',
+		'v1_time':'19:15',
+		'v1_duration':'15'
+	}
+	return render_template('programmes.html',**templateData)
 
 if __name__=='__main__':
 	app.run(debug=True, host='0.0.0.0',port=80)
