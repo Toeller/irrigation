@@ -8,13 +8,13 @@
 <form action="programmes.html" method="post">
   <p>Programme valve 1</p>
   <fieldset>
-    <input type="date" id="v1_start" {{v1_start}}>
+    <input type="date" id="v1_start" value="{{v1_start}}">
     <label for="v1_start">Date de démarrage</label><br>
-    <input type="number" id="v1_freqency" min="1" max="30" {{v1_freqency}}>
+    <input type="number" id="v1_freqency" min="1" max="30" value="{{v1_frequency}}">
 	<label for="v1_freqency">tous les ... jours</label><br>
-	<input type="time" id="v1_time" {{v1_time}}>
+	<input type="time" id="v1_time" value="{{v1_time}}">
 	<label for="v1_time">heure de start</label><br>
-	<input type="number" id="v1_duration" min="1" max="1440" {{v1_duration}}>
+	<input type="number" id="v1_duration" min="1" max="1440" value="{{v1_duration}}">
 	<label for="v1_duration">durée (minutes)</label><br>
 	<input type="submit" name="v1_mod_prog" value="enregistrer la modification">
 	<input type="submit" name="v1_del_prog" value="effacer le programme">
