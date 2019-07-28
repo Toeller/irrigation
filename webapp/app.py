@@ -27,11 +27,19 @@ def pilotage():
 
 @app.route('/programmes')
 def programmes():
+	db=MySQLdb.connect("localhost","root","Notre_jardin_est_le_paradis.","bewaesserung")
+	curs=db.cursor()
+	curs.execute("Select * from schedule;")
+	for entry in curs.fetchall():
+		v1_start=format(entry[2])
+		v1_frequency=format(entry[3])
+		v1_time=format(entry[2])
+		v1_duration=format(entry[4])
 	templateData={
-		'v1_start':'2019-07-25',
-		'v1_frequency':'2',
-		'v1_time':'19:15',
-		'v1_duration':'15'
+		'v1_start':v1_start,
+		'v1_frequency':v1_frequency,
+		'v1_time':v1_time,
+		'v1_duration':v1_duration
 	}
 	return render_template('programmes.html',**templateData)
 

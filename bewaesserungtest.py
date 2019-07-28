@@ -9,14 +9,14 @@ import time
 onJahr=2019
 onMonat=07
 onTag= 22
-onStunde=18
-onMinute=25
+onStunde=06
+onMinute=00
 
 #Stop
 offJahr=2019
 offMonat=07
-offTag=22
-offStunde=18
+offTag=06
+offStunde=05
 offMinute=40
 
 
