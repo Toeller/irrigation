@@ -6,6 +6,21 @@ import time
 
 
 irrigationsetup.setup()
+
+while (true):
+	for(n=1;n<8;n++)
+		if irrigationmodel.state(n)==true
+			GPIO.output(pumpe, GPIO.LOW)
+			#print(datetime.now())
+			#print(n)
+			#print("An")
+	for(n=1;n<8;n++)
+		if irrigationmodel.state(n)==false
+			GPIO.output(pumpe, GPIO.LOW)
+			#print(datetime.now())
+			#print(n)
+			#print("Aus")
+			
 #
 # Timer
 #
